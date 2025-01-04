@@ -11,18 +11,18 @@
     @livewireStyles
 
     {{-- Script Tailwind --}}
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
-    <x-templates.header />
+    <x-header />
 
 
-    <main class="w-full">
+    <main>
         {{ $slot }}
     </main>
 
-    <x-templates.footer />
+    <x-footer />
 
     {{-- script livewire --}}
     @livewireScripts
