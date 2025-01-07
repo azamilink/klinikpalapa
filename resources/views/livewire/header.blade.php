@@ -1,4 +1,4 @@
-<header class="absoluted bg-white inset-x-0 top-0 z-50" x-data="{ isOpen: false }">
+<header class="fixed bg-white inset-x-0 top-0 z-50" x-data="{ isOpen: false }">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
@@ -14,12 +14,11 @@
                 </svg>
             </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Product</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Features</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
-        </div>
+        <ul class="hidden lg:flex lg:gap-x-12">
+            @foreach ($navbar as $nav)
+                <x-navbar :active="request()->routeIs($nav['route'])" :href="$nav['url']">{{ $nav['name'] }}</x-navbar>
+            @endforeach
+        </ul>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" class="btn btn-primary text-sm/6 font-semibold text-white-900">Make An Appointment</a>
         </div>
@@ -43,14 +42,14 @@
             </div>
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
-                    <div class="space-y-2 py-6">
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
-                    </div>
+                    <ul class="space-y-2 py-6">
+                        @foreach ($navbar as $nav)
+                            <x-navlink :href="$nav['url']">{{ $nav['name'] }}</x-navlink>
+                        @endforeach
+                    </ul>
+                    <div class="divider">Silahkan</div>
                     <div class="py-6">
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                        <a href="#" class="btn btn-primary text-sm/6 font-semibold text-white-900">Make An Appointment</a>
                     </div>
                 </div>
             </div>

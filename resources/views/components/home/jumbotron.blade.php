@@ -1,4 +1,4 @@
-<div class="hero min-h-screen" style="background-image: url({{ asset('images/jumbotron.png') }});">
+<div class="hero min-h-screen bg-fixed" style="background-image: url({{ asset('images/jumbotron.png') }});">
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-neutral-content text-center">
         <div class="max-w-md">

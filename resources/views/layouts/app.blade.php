@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <x-header />
+    <livewire:header />
 
 
     <main>

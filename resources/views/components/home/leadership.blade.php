@@ -1,4 +1,4 @@
-<div class="bg-white py-24 sm:py-32">
+<div class="bg-white py-24 sm:py-32 border-b border-blue-400">
     <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
         <div class="max-w-xl">
             <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Meet our
@@ -12,7 +12,7 @@
                     <img class="size-16 rounded-full" src="{{ asset('images/drg-Anggraeni-10-1024x1024.webp') }}" alt="">
                     <div>
                         <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">drg. Anggraeni</h3>
-                        <CEO class="text-sm/6 font-semibold text-indigo-600">CEO</p>
+                        <CEO class="text-sm/6 font-semibold text-indigo-600">Founder / Owner</p>
                     </div>
                 </div>
             </li>
@@ -20,9 +20,9 @@
                 <div class="flex items-center gap-x-6">
                     <img class="size-16 rounded-full" src="{{ asset('images/Bp.-Sofwan-Farisyi-edit.png') }}" alt="">
                     <div>
-                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Bp.-Sofwan-Farisyi
+                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Bp. Sofwan Farisyi
                         </h3>
-                        <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder</p>
+                        <p class="text-sm/6 font-semibold text-indigo-600">CO - Founder</p>
                     </div>
                 </div>
             </li>
@@ -30,8 +30,8 @@
                 <div class="flex items-center gap-x-6">
                     <img class="size-16 rounded-full" src="{{ asset('images/Mr.-Majeed-1.jpg') }}" alt="">
                     <div>
-                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Leslie Alexander</h3>
-                        <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Mr. Majeed</h3>
+                        <p class="text-sm/6 font-semibold text-indigo-600">Ceo</p>
                     </div>
                 </div>
             </li>
@@ -39,8 +39,8 @@
                 <div class="flex items-center gap-x-6">
                     <img class="size-16 rounded-full" src="{{ asset('images/SUBAKAT-HADI.png') }}" alt="">
                     <div>
-                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Leslie Alexander</h3>
-                        <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Subakat Hadi</h3>
+                        <p class="text-sm/6 font-semibold text-indigo-600">Technical Director</p>
                     </div>
                 </div>
             </li>
@@ -49,8 +49,8 @@
                     <img class="size-16 rounded-full" src="{{ asset('images/SUTOTO.png') }}" alt="">
 
                     <div>
-                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Leslie Alexander</h3>
-                        <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Sutoto</h3>
+                        <p class="text-sm/6 font-semibold text-indigo-600">General Manager</p>
                     </div>
                 </div>
             </li>
@@ -59,8 +59,8 @@
                     <img class="size-16 rounded-full" src="{{ asset('images/Tifatul-Sembiring-min.png') }}" alt="">
 
                     <div>
-                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Leslie Alexander</h3>
-                        <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                        <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Tifanul Sembiring</h3>
+                        <p class="text-sm/6 font-semibold text-indigo-600">Finance</p>
                     </div>
                 </div>
             </li>

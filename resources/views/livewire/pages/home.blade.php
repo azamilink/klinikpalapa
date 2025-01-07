@@ -3,7 +3,8 @@
 
         <x-home.tab />
 
+        <x-home.leadership />
+
         <x-home.timeline />
 
-        <x-home.structure />
     </div>
