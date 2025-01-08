@@ -20,8 +20,11 @@
             @endforeach
         </ul>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" class="btn btn-primary text-sm/6 font-semibold text-white-900">Make An Appointment</a>
+            @if (Route::has('login'))
+                <livewire:welcome.navigation />
+            @endif
         </div>
+
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
     <div class="lg:hidden" role="dialog" aria-modal="true" x-show="isOpen">
@@ -49,7 +52,9 @@
                     </ul>
                     <div class="divider">Silahkan</div>
                     <div class="py-6">
-                        <a href="#" class="btn btn-primary text-sm/6 font-semibold text-white-900">Make An Appointment</a>
+                        @if (Route::has('login'))
+                            <livewire:welcome.navigation />
+                        @endif
                     </div>
                 </div>
             </div>
