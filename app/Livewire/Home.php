@@ -7,7 +7,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 #[Layout('layouts.user')]
-#[Title('Klinik Palapa')]
+#[Title('Home')]
 
 class Home extends Component
 {

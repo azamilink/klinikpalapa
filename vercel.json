@@ -19,9 +19,10 @@
             "dest": "/api/index.php"
         }
     ],
+    "public": "true",
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "APP_URL": "https://klinikpalapa.vercel.app/",
         "APP_KEY": "base64:Mn0aks3Dv6Eopw8DN84pDxDvu6GsAILwdGJPzE8XQpI=",
         "APP_CONFIG_CACHE": "/tmp/config.php",

@@ -3,7 +3,9 @@
 
         <x-home.tab />
 
-        <x-home.leadership />
+        <x-home.reason />
+
+        <x-home.penanggung-jawab />
 
         <x-home.timeline />
 
