@@ -9,13 +9,14 @@ use Illuminate\View\Component;
 class Header extends Component
 {
     public $navbar = [
-        ["name" => "Home", "route" => "home", "url" => "/"],
-        ["name" => "About Us", "route" => "about", "url" => "/about"],
-        ["name" => "Contact Us", "route" => "contact", "url" => "/contact"],
-        ["name" => "Our Dentist", "route" => "dentist", "url" => "/dentist"],
-        ["name" => "Blog", "route" => "blog", "url" => "/blog"],
-        ["name" => "Insurance", "route" => "insurance", "url" => "/insurance"],
+        ['name' => 'Home', 'route' => 'home', 'url' => '/'],
+        ['name' => 'About Us', 'route' => 'about', 'url' => '/about'],
+        ['name' => 'Contact Us', 'route' => 'contact', 'url' => '/contact'],
+        ['name' => 'Our Dentist', 'route' => 'dentist', 'url' => '/dentist'],
+        ['name' => 'Blog', 'route' => 'blog', 'url' => '/blog'],
+        ['name' => 'Insurance', 'route' => 'insurance', 'url' => '/insurance'],
     ];
+
     /**
      * Create a new component instance.
      */

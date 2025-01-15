@@ -43,6 +43,8 @@
         "DB_USERNAME": "klinikpalapa_taughtnews",
         "DB_PASSWORD": "a9ecefae6fdc68471d3eaa35bf9878cd187f4fab",
 
+        "GOOGLE_CLIENT_ID": "990653760163-ot93kio1gtj7jmk09msph2cu78vnkfqe.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "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",
         "GOOGLE_CALLBACK": "http://klinikpalapa.vercel.app/auth/google/callback"
     },
     "outputDirectory": "public"
