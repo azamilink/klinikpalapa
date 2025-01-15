@@ -3,12 +3,13 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\SocialiteController;
 
-Route::get('/', App\Livewire\Home::class)->name('home');
-Route::get('/about', App\Livewire\About::class)->name('about');
-Route::get('/contact', App\Livewire\Contact::class)->name('contact');
-Route::get('/dentist', App\Livewire\Dentist::class)->name('dentist');
-Route::get('/blog', App\Livewire\Blog::class)->name('blog');
-Route::get('/insurance', App\Livewire\Insurance::class)->name('insurance');
+Route::get('/', fn() => view('pages.home'))->name('home');
+Route::get('/about', fn() => view('pages.about'))->name('about');
+Route::get('/contact', fn() => view('pages.contact'))->name('contact');
+Route::get('/dentist', fn() => view('pages.dentist'))->name('dentist');
+Route::get('/blog', fn() => view('pages.blog'))->name('blog');
+Route::get('/insurance', fn() => view('pages.insurance'))->name('insurance');
+
 
 Route::get('/auth/redirect', [SocialiteController::class, 'redirect']);
 Route::get('/auth/google/callback', [SocialiteController::class, 'callback']);

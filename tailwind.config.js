@@ -19,7 +19,7 @@ export default {
         },
     },
 
-    plugins: [forms, daisyui],
+    plugins: [forms, daisyui, require("tailgrids/plugin")],
 
     daisyui: {
         themes: ["light", "dark", "cupcake"],
