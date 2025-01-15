@@ -1,7 +1,7 @@
 <x-guest-layout title="Home">
 
     {{-- Jumbotron Start --}}
-    <div class="hero min-h-screen bg-fixed" style="background-image: url({{ asset('images/jumbotron.png') }});">
+    <section class="hero min-h-screen bg-fixed" style="background-image: url({{ asset('images/jumbotron.png') }});">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-neutral-content text-center">
             <div class="max-w-3xl">
@@ -15,11 +15,11 @@
                 </a>
             </div>
         </div>
-    </div>
+    </section>
     {{-- Jumbotron End --}}
 
     {{-- Tabs Pendaftaran Start --}}
-    <div class="container mx-auto max-w-6xl">
+    <section class="container mx-auto max-w-6xl">
         <div class="mt-[-150px]">
             <div role="tablist" class="tabs tabs-lifted">
                 {{-- Tab 1 Start --}}
@@ -95,11 +95,11 @@
                 {{-- Tab 2 End --}}
             </div>
         </div>
-    </div>
+    </section>
     {{-- Tabs Pendaftaran End --}}
 
     {{-- Reason Start --}}
-    <div class="hero bg-white min-h-screen rounded-t-3xl pt-4">
+    <section class="hero bg-white min-h-screen rounded-t-3xl pt-4">
         <div class="hero-content flex-col lg:flex-row-reverse">
             <img src="{{ asset('images/home/FOTO1-1.jpg') }}" class="max-w-lg rounded-lg shadow-2xl" />
             <div>
@@ -116,7 +116,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
     {{-- Reason End --}}
 
     {{-- Penanggung Jawab Start --}}
@@ -259,7 +259,25 @@
     {{-- Service End --}}
 
     <!-- ====== Testimonials Section Start -->
-    <div class="my-10 md:my-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
+    <section class="my-10 md:my-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
+        <div class="relative w-full py-2 md:py-24 bg-indigo-700 md:w-1/2 flex flex-col item-center justify-center">
+
+            <div class="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
+
+            <div class="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
+                <span class="md:block">Yang</span>
+                <span class="md-block">Pelanggan</span>
+                <span class="block">Kami Katakan...!</span>
+            </div>
+
+            <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
+                <button class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">
+                    &#8592;
+                </button><button class="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1">
+                    &#8594;
+                </button>
+            </div>
+        </div>
         <div class="bg-gray-100 md:w-1/2">
             <div class="flex flex-col h-full relative">
 
@@ -290,9 +308,9 @@
                 </div>
 
                 <div class="flex my-4 justify-center items-center">
-                    <button @click.prevent="testimonialActive = 1" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2" :class="{ 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 1 }">JD</button>
-                    <button @click.prevent="testimonialActive = 2" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2" :class="{ 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 2 }">WD</button>
-                    <button @click.prevent="testimonialActive = 3" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2" :class="{ 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 3 }">JW</button>
+                    <button @click.prevent="testimonialActive = 1" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2" :class="{ 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 1 }">LW</button>
+                    <button @click.prevent="testimonialActive = 2" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2" :class="{ 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 2 }">ST</button>
+                    <button @click.prevent="testimonialActive = 3" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2" :class="{ 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 3 }">RW</button>
                 </div>
 
                 <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
@@ -313,26 +331,7 @@
                 </div>
             </div>
         </div>
-        <div class="relative w-full py-2 md:py-24 bg-indigo-700 md:w-1/2 flex flex-col item-center justify-center">
-
-            <div class="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
-
-            <div class="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
-                <span class="md:block">Yang</span>
-                <span class="md-block">Pelanggan</span>
-                <span class="block">Kami Katakan!</span>
-            </div>
-
-            <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
-                <button class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">
-                    &#8592;
-                </button><button class="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1">
-                    &#8594;
-                </button>
-            </div>
-        </div>
-
-    </div>
+    </section>
     <!-- ====== Testimonials Section End -->
 
     <!-- ====== Blog Section Start -->
@@ -418,5 +417,55 @@
         </div>
     </section>
     <!-- ====== Blog Section End -->
+
+    {{-- Subscriptin Start --}}
+    <section class="bg-indigo-500 text-black py-16 sm:py-24 lg:py-32 mb-12">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
+            <div class="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
+                <h2 class="inline sm:block lg:inline xl:block">Want product news and updates?</h2>
+                <p class="inline sm:block lg:inline xl:block">Sign up for our newsletter.</p>
+            </div>
+            <form class="w-full max-w-md lg:col-span-5 lg:pt-2">
+                <div class="flex gap-x-4">
+                    <label for="email-address" class="sr-only">Email address</label>
+                    <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/10 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-white/75 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6" placeholder="Enter your email">
+                    <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Subscribe</button>
+                </div>
+                <p class="mt-4 text-sm leading-6 text-gray-300">We care about your data. Read our <a href="#" class="font-semibold text-white hover:text-indigo-50">privacy&nbsp;policy</a>.</p>
+            </form>
+        </div>
+    </section>
+    {{-- Subscriptin End --}}
+
+    {{-- Coment Start --}}
+    <section class="container mx-auto  max-w-4xl lg:grid lg:grid-cols-3 lg:gap-2 content-center mb-12">
+        <label class="input input-bordered flex items-center gap-2 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+            </svg>
+            <input type="text" class="grow" placeholder="Name" />
+        </label>
+        <label class="input input-bordered flex items-center gap-2 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
+                <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+            </svg>
+            <input type="text" class="grow" placeholder="Email" />
+        </label>
+        <label class="input input-bordered flex items-center gap-2 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
+                <path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" />
+            </svg>
+            <input type="text" class="grow" placeholder="Website" />
+        </label>
+
+        <div class="lg:col-span-3 mb-4">
+            <textarea class="textarea textarea-bordered textarea-lg w-full max-w-full" placeholder="Comment"></textarea>
+        </div>
+
+
+        <button class="btn btn-outline btn-info btn-lg mb-4">Post Comment</button>
+    </section>
+    {{-- Coment end --}}
 
 </x-guest-layout>
