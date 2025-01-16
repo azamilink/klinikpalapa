@@ -20,11 +20,13 @@
 </head>
 
 <body>
+    <x-header />
 
-    <main class="min-h-screen w-full flex justify-center items-center">
+    <main class="min-h-screen">
         {{ $slot }}
     </main>
 
+    <x-footer />
 
     {{-- script --}}
     @livewireScripts

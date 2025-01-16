@@ -1,4 +1,4 @@
-<x-guest-layout title="Home">
+<x-main-layout>
 
     {{-- Jumbotron Start --}}
     <section class="hero min-h-screen bg-fixed" style="background-image: url({{ asset('images/jumbotron.png') }});">
@@ -468,4 +468,4 @@
     </section>
     {{-- Coment end --}}
 
-</x-guest-layout>
+    </x-guest-layout>

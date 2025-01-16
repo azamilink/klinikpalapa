@@ -1,5 +1,5 @@
-<x-guest-layout title="Blog">
+<x-main-layout title="Blog">
 
     Blog Page
 
-</x-guest-layout>
+</x-main-layout>

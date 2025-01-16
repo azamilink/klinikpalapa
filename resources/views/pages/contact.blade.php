@@ -1,5 +1,5 @@
-<x-guest-layout title="Contact">
+<x-main-layout title="Contact">
 
-    <h1>Halaman</h1> Contact Page
+    Contact Page
 
-</x-guest-layout>
+</x-main-layout>

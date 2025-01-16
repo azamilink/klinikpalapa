@@ -1,5 +1,5 @@
-<x-guest-layout title="Insurance">
+<x-main-layout title="Insurance">
 
     Insurance Page
 
-</x-guest-layout>
+</x-main-layout>

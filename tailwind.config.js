@@ -17,12 +17,54 @@ export default {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
             },
         },
+
+        mytheme: {
+            primary: "#d600fd",
+
+            "primary-content": "#100016",
+
+            secondary: "#00b0db",
+
+            "secondary-content": "#000b11",
+
+            accent: "#0073ff",
+
+            "accent-content": "#000516",
+
+            neutral: "#0a0c08",
+
+            "neutral-content": "#c7c7c6",
+
+            "base-100": "#faf7ff",
+
+            "base-200": "#d9d7de",
+
+            "base-300": "#bab7be",
+
+            "base-content": "#151516",
+
+            info: "#00ccff",
+
+            "info-content": "#000f16",
+
+            success: "#53cf00",
+
+            "success-content": "#021000",
+
+            warning: "#ff3300",
+
+            "warning-content": "#160100",
+
+            error: "#cb0f44",
+
+            "error-content": "#fbd6d7",
+        },
     },
 
     plugins: [forms, daisyui, require("tailgrids/plugin")],
 
     daisyui: {
-        themes: ["light", "dark", "cupcake"],
+        themes: ["dark", "light", "mytheme", "cupcake"],
         darkTheme: "dark",
         base: true,
         styled: true,

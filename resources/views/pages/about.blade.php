@@ -1,5 +1,4 @@
-<x-guest-layout title="About">
-
+<x-main-layout title="About">
     <div class="container mx-auto">
         <div class="grid grid-cols-1 justify-items-center my-4">
             <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
@@ -44,7 +43,4 @@
         </ul>
 
     </div>
-
-
-
-</x-guest-layout>
+</x-main-layout>

@@ -1,5 +1,5 @@
-<x-guest-layout title="Dentist">
+<x-main-layout title="Dentist">
 
     Dentist Page
 
-</x-guest-layout>
+</x-main-layout>

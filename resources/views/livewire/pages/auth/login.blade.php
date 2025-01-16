@@ -23,7 +23,7 @@ new #[Layout('layouts.guest')] class extends Component {
     }
 }; ?>
 
-<div class="container mx-auto max-w-md mt-12">
+<div class="border border-black max-w-md p-4">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
@@ -65,8 +65,8 @@ new #[Layout('layouts.guest')] class extends Component {
             </x-primary-button>
 
             <div class="mx-3">
-                <a href="{{ url('/auth/redirect') }}" class="btn btn-secondary">
-                    LOGIN WITH GOOGLE ₲
+                <a href="{{ route('register') }}" class="rounded-md px-3 py-2 bg-primary text-white ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+                    Register
                 </a>
             </div>
         </div>
