@@ -19,101 +19,101 @@
     {{-- Jumbotron End --}}
 
     {{-- Tabs Pendaftaran Start --}}
-    <section class="container mx-auto max-w-6xl">
-        <div class="mt-[-150px]">
-            <div role="tablist" class="tabs tabs-lifted">
-                {{-- Tab 1 Start --}}
-                <input type="radio" name="my_tabs_2" role="tab" class="tab text-primary font-bold bg-slate-400" aria-label="Buat_Perjanjian" checked="checked" />
-                <div role="tabpanel" class="tab-content bg-primary border-base-300 rounded-box p-6">
-                    <div class="card bg-primary w-full shrink-0 shadow-2xl">
-                        <form class="card-body text-black grid lg:grid-cols-3 gap-1">
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text text-white">Nama</span>
-                                </label>
-                                <input type="email" placeholder="nama" class="input input-bordered" required />
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text text-white">Jenis Kelamin</span>
-                                </label>
-                                <select class="select select-bordered w-full max-w-xs">
-                                    <option disabled selected>Pilih Gender Anda...</option>
-                                    <option>Pria</option>
-                                    <option>Wanita</option>
-                                </select>
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text text-white">Handphone</span>
-                                </label>
-                                <input type="text" placeholder="Tuliskan Nomor Ponsel Anda" class="input input-bordered" required />
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text text-white">Alamat</span>
-                                </label>
-                                <textarea class="textarea textarea-dark" placeholder="Alamat"></textarea>
-                            </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text text-white">Keluhan</span>
-                                </label>
-                                <textarea class="textarea textarea-primary" placeholder="Keluhan"></textarea>
-                            </div>
+    <div class="mt-8 lg:-mt-32 container mx-auto max-w-6xl">
+        <div role="tablist" class="tabs tabs-lifted">
+            {{-- Tab 1 Start --}}
+            <input type="radio" name="my_tabs_2" role="tab" class="tab text-primary font-bold bg-slate-400" aria-label="Buat_Perjanjian" checked="checked" />
+            <div role="tabpanel" class="tab-content bg-primary border-base-300 rounded-box p-6">
+                <div class="card bg-primary w-full shrink-0 shadow-2xl">
+                    <form class="card-body text-black grid lg:grid-cols-3 gap-1">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-white">Nama</span>
+                            </label>
+                            <input type="email" placeholder="nama" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-white">Jenis Kelamin</span>
+                            </label>
+                            <select class="select select-bordered w-full max-w-xs">
+                                <option disabled selected>Pilih Gender Anda...</option>
+                                <option>Pria</option>
+                                <option>Wanita</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-white">Handphone</span>
+                            </label>
+                            <input type="text" placeholder="Tuliskan Nomor Ponsel Anda" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-white">Alamat</span>
+                            </label>
+                            <textarea class="textarea textarea-dark" placeholder="Alamat"></textarea>
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-white">Keluhan</span>
+                            </label>
+                            <textarea class="textarea textarea-primary" placeholder="Keluhan"></textarea>
+                        </div>
 
-                            <div class="form-control mt-6 place-self-end w-full">
-                                <button class="btn btn-secondary">Kirim</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="form-control mt-6 place-self-end w-full">
+                            <button class="btn btn-secondary">Kirim</button>
+                        </div>
+                    </form>
                 </div>
-                {{-- Tab 1 End --}}
-                {{-- Tabs 2 start --}}
-                <input type="radio" name="my_tabs_2" role="tab" class="tab text-primary font-bold bg-slate-400" aria-label="Rating_Kami" />
-                <div role="tabpanel" class="tab-content bg-primary border-base-300 p-6">
-                    <div class="stats shadow grid grid-cols-3 gap-1">
-                        <div class="stat">
-                            <div class="stat-title">Total Pengunjung</div>
-                            <div class="stat-value text-primary">25.6K</div>
-                            <div class="stat-desc">21% more than</div>
-                        </div>
-
-                        <div class="stat">
-                            <div class="stat-title">Jumlah Dentist</div>
-                            <div class="stat-value text-secondary">6</div>
-                            <div class="stat-desc">21% more than</div>
-                        </div>
-
-                        <div class="stat">
-                            <div class="stat-value">86%</div>
-                            <div class="stat-title">Pasien Terlayani</div>
-                            <div class="stat-desc text-secondary">31 tasks remaining</div>
-                        </div>
-                    </div>
-                </div>
-                {{-- Tab 2 End --}}
             </div>
+            {{-- Tab 1 End --}}
+            {{-- Tabs 2 start --}}
+            <input type="radio" name="my_tabs_2" role="tab" class="tab text-primary font-bold bg-slate-400" aria-label="Rating_Kami" />
+            <div role="tabpanel" class="tab-content bg-primary border-base-300 p-6">
+                <div class="stats shadow grid grid-cols-3 gap-1">
+                    <div class="stat">
+                        <div class="stat-title">Total Pengunjung</div>
+                        <div class="stat-value text-primary">25.6K</div>
+                        <div class="stat-desc">21% more than</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-title">Jumlah Dentist</div>
+                        <div class="stat-value text-secondary">6</div>
+                        <div class="stat-desc">21% more than</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-value">86%</div>
+                        <div class="stat-title">Pasien Terlayani</div>
+                        <div class="stat-desc text-secondary">31 tasks remaining</div>
+                    </div>
+                </div>
+            </div>
+            {{-- Tab 2 End --}}
         </div>
-    </section>
+    </div>
     {{-- Tabs Pendaftaran End --}}
 
     {{-- Reason Start --}}
-    <section class="hero bg-white min-h-screen rounded-t-3xl pt-4">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="{{ asset('images/home/FOTO1-1.jpg') }}" class="max-w-lg rounded-lg shadow-2xl" />
-            <div>
-                <h1 class="text-5xl font-bold">Kenapa Memilih Palapa Dentists?</h1>
-                <p class="py-6">
-                    Palapa Dentists merupakan klinik gigi spesialis di Jakarta Selatan dengan konsep pelayanan klinik gigi profesional dan terpadu bernuansa homey sehingga berbeda dengan nuansa rumah sakit pada umumnya.
-                </p>
-                <ul>
-                    <li>❤️ Dokter yang berkualifikasi tinggi</li>
-                    <li>❤️ Pelayanan satu tempat</li>
-                    <li>❤️ Bekerjasama dengan berbagai asuransi</li>
-                    <li>❤️ Klinik Gigi dengan nuansa rumah yang nyaman</li>
-                    <li>❤️ Lingkungan ramah anak dan keluarga</li>
-                </ul>
+    <section class="min-h-screen lg:max-w-6xl py-4 container mx-auto">
+        <div class="hero rounded-t-3xl">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img src="{{ asset('images/home/FOTO1-1.jpg') }}" class="max-w-sm md:max-w-lg rounded-lg shadow-2xl" />
+                <div class="max-w-sm md:max-w-lg">
+                    <h1 class="text-5xl font-bold">Kenapa Memilih Palapa Dentists?</h1>
+                    <p class="py-6">
+                        Palapa Dentists merupakan klinik gigi spesialis di Jakarta Selatan dengan konsep pelayanan klinik gigi profesional dan terpadu bernuansa homey sehingga berbeda dengan nuansa rumah sakit pada umumnya.
+                    </p>
+                    <ul>
+                        <li>❤️ Dokter yang berkualifikasi tinggi</li>
+                        <li>❤️ Pelayanan satu tempat</li>
+                        <li>❤️ Bekerjasama dengan berbagai asuransi</li>
+                        <li>❤️ Klinik Gigi dengan nuansa rumah yang nyaman</li>
+                        <li>❤️ Lingkungan ramah anak dan keluarga</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
