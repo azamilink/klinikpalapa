@@ -9,23 +9,21 @@
     {{-- Heading End --}}
 
     {{-- Jumbotron Start --}}
-    <section class="-mt-28 mb-32">
-        <div class="max-w-6xl h-auto container mx-auto">
-            <img src="{{ asset('images/about/about_jumbotron.webp') }}" alt="jumbotron" class="w-ful h-full rounded-3xl">
-        </div>
+    <section class="-mt-28 mb-28 max-w-6xl container mx-auto">
+        <img src="{{ asset('images/about/about_jumbotron.webp') }}" alt="jumbotron" class="w-ful h-full rounded-3xl">
     </section>
     {{-- Jumbotron End --}}
 
     {{-- Service Start --}}
-    <section class="min-h-screen w-full container mx-auto">
-        <div class="max-w-5xl container mx-auto text-center mb-16">
-            <h1 class="text-5xl font-bold mb-4">Layanan Perawatan Gigi Kami meliputi</h1>
+    <section class="min-h-screen max-w-6xl container mx-auto">
+        <div class="max-w-5xl container mx-auto text-center mb-12">
+            <h1 class="text-xl lg:text-5xl font-bold mb-4">Layanan Perawatan Gigi Kami meliputi</h1>
             <p class="text-md font-extralight">
                 Tujuan kami adalah untuk membantu mempertahankan senyum cemerlang Anda dengan tim ahli bedah gigi Kami yang berpengalaman dan berdedikasi.
                 Kami di sini siap untuk membantu menangani kebutuhan gigi Anda.
             </p>
         </div>
-        <div class="max-w-6xl container mx-auto text-center grid lg:grid-cols-4 gap-1">
+        <div class="max-w-6xl container mx-auto flex md:justify-between md:flex-1 md:flex-row flex-col items-center">
             <div class="w-60 h-96 flex justify-start items-center flex-col mb-8">
                 <div class="h-24 w-24 mb-4">
                     <img src="{{ asset('images/services/service_1.png') }}" alt="service" class="h-full w-full">
@@ -60,7 +58,7 @@
     {{-- Service End --}}
 
     {{-- Penanggung Jawab Start --}}
-    <section class="hero bg-slate-200 min-h-screen pt-4">
+    <section class="hero min-h-screen max-w-6xl container mx-auto pt-4">
         <div class="hero-content flex-col lg:flex-row">
             <img src="{{ asset('images/drg-Anggraeni-10-1024x1024.webp') }}" class="max-w-sm rounded-full shadow-2xl m-3" />
             <div class="m-8">
@@ -87,7 +85,7 @@
 
     {{-- Sejarah Start --}}
     <section class="w-full min-h-screen py-12" style="background-image: url({{ asset('images/about/background.jpg') }})">
-        <div class="container mx-auto">
+        <div class="container mx-auto max-w-6xl">
             <div class="grid grid-cols-1 justify-items-center my-4">
                 <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                     Sejarah Kami

@@ -97,7 +97,7 @@
     {{-- Tabs Pendaftaran End --}}
 
     {{-- Reason Start --}}
-    <section class="min-h-screen lg:max-w-6xl py-4 container mx-auto">
+    <section class="min-h-screen lg:max-w-6xl py-4 container mx-auto max-w-6xl">
         <div class="hero rounded-t-3xl">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <img src="{{ asset('images/home/FOTO1-1.jpg') }}" class="max-w-sm md:max-w-lg rounded-lg shadow-2xl" />
@@ -120,7 +120,7 @@
     {{-- Reason End --}}
 
     {{-- Penanggung Jawab Start --}}
-    <section class="hero bg-white min-h-screen pt-4">
+    <section class="hero bg-white min-h-screen pt-4 container mx-auto max-w-6xl">
         <div class="hero-content flex-col lg:flex-row">
             <img src="{{ asset('images/drg-Anggraeni-10-1024x1024.webp') }}" class="max-w-sm rounded-full shadow-2xl m-3" />
             <div>
@@ -138,7 +138,7 @@
 
     {{-- Service Start --}}
     <!-- ====== Services Section Start -->
-    <section class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark">
+    <section class="py-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark container mx-auto max-w-6xl">
         <div class="container mx-auto">
             <div class="-mx-4 flex flex-wrap">
                 <div class="w-full px-4">
@@ -259,7 +259,7 @@
     {{-- Service End --}}
 
     <!-- ====== Testimonials Section Start -->
-    <section class="my-10 md:my-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
+    <section class="my-10 md:my-24 container mx-auto max-w-6xl min-h-screen flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
         <div class="relative w-full py-2 md:py-24 bg-indigo-700 md:w-1/2 flex flex-col item-center justify-center">
 
             <div class="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
@@ -335,7 +335,7 @@
     <!-- ====== Testimonials Section End -->
 
     <!-- ====== Blog Section Start -->
-    <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-white dark:bg-dark">
+    <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-white dark:bg-dark container mx-auto max-w-6xl min-h-screen">
         <div class="container mx-auto">
             <div class="flex flex-wrap justify-center -mx-4">
                 <div class="w-full px-4">
