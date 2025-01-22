@@ -9,13 +9,13 @@
     {{-- Heading End --}}
 
     {{-- Jumbotron Start --}}
-    <section class="-mt-40 mb-8 max-w-5xl container mx-auto">
+    <div class="-mt-40 mb-8 max-w-5xl container mx-auto">
         <img src="{{ asset('images/about/about_jumbotron.webp') }}" alt="jumbotron" class="w-ful h-full rounded-3xl">
-    </section>
+    </div>
     {{-- Jumbotron End --}}
 
     {{-- Service Start --}}
-    <section class="max-w-6xl container mx-auto">
+    <section class="max-w76xl container mx-auto py-8">
         <div class="max-w-5xl container mx-auto text-center mb-12">
             <h1 class="text-xl lg:text-5xl font-bold mb-4">Layanan Perawatan Gigi Kami meliputi</h1>
             <p class="text-md font-extralight">
@@ -58,10 +58,10 @@
     {{-- Service End --}}
 
     {{-- Penanggung Jawab Start --}}
-    <section class="max-w-6xl container mx-auto pt-4">
-        <div class="hero-content flex-col lg:flex-row">
-            <img src="{{ asset('images/drg-Anggraeni-10-1024x1024.webp') }}" class="max-w-sm rounded-full shadow-2xl m-3" />
-            <div class="m-8">
+    <section class="hero max-w-7xl container mx-auto py-8">
+        <div class="hero-content flex-col lg:flex-row flex-wrap">
+            <img src="{{ asset('images/drg-Anggraeni-10-1024x1024.webp') }}" class="max-w-sm rounded-full shadow-2xl m-3 flex-[1.5]" />
+            <div class="m-8 flex-[1.2]">
                 <h1 class="text-5xl font-bold">Penanggung Jawab Klinik</h1>
                 <h5 class="text-2xl font-semibold mt-4">
                     <a href="https://palapadentists.com/our-doctor/dr-drg-anggraeni-sp-kg/">Dr. drg. Anggraeni, Sp.KG</a>
@@ -70,10 +70,10 @@
                     Dikenal dengan panggilan drg.Rani, memulai karirnya di dunia kedokteran gigi setelah tamat dari Universitas Indonesia tahun 1999 dengan melanjutkan pendidikan Spesialis Konservasi Gigi.
                 </p>
             </div>
-            <div class="max-w-xs">
+            <div class="flex-1">
                 <h1 class="text-5xl font-bold mb-4">Para Pendiri</h1>
 
-                <p class="py-2">
+                <p class="py-2 text-justify">
                     Palapa Dentists merupakan klinik gigi spesialis di Jakarta Selatan dengan konsep pelayanan klinik gigi profesional dan terpadu dengan nuansa rumah yang nyaman (homey) sehingga berbeda dengan nuansa rumah sakit pada umumnya.
 
                     Sebelumnya, klinik ini dikenal sebagai Praktek Gigi drg. Solhah Busro, M. Kes. Praktek Gigi yang bertempat di rumah pribadi drg. Solhah Busro, di Jl. Palapa 1 No. 4, Pasar Minggu Jakarta Selatan ini telah berdiri sejak tahun 1980. drg. Solhah Busro merupakan dokter gigi sekaligus dosen di Fakultas Kedokteran Gigi (FKG) Universitas Trisakti. Beliau wafat pada tahun 2007.

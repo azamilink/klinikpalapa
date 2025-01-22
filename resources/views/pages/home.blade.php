@@ -1,12 +1,12 @@
 <x-main-layout>
 
     {{-- Jumbotron Start --}}
-    <section class="min-h-screen bg-fixed flex justify-center items-center" style="background-image: url({{ asset('images/jumbotron.png') }});">
+    <section class="min-h-screen bg-fixed flex justify-center items-center lg:bg-cover bg-opacity-85" style="background-image: url({{ asset('images/jumbotron.png') }});">
         <div class="hero-content text-neutral-content">
             <div class="max-w-3xl text-center">
-                <h1 class="mb-5 text-4xl font-bold">Selamat Datang di</h1>
+                <h1 class="mb-5 text-5xl font-bold text-white">Selamat Datang di</h1>
                 <H2 class="mb-5 text-7xl font-bold text-primary">PALAPA DENTIST</H2>
-                <p class="mb-5">
+                <p class="mb-5 text-xl font-semibold text-white">
                     Klinik Gigi Spesialis di Jakarta Selatan dengan konsep pelayanan profesional dan terpadu dengan nuansa ‘homey’
                 </p>
                 <a href="{{ url('/auth/redirect') }}" class="btn btn-primary">

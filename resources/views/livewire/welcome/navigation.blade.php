@@ -4,8 +4,8 @@
             Dashboard
         </a>
     @else
-        <a href="{{ route('login') }}" class="rounded-md mx-3 px-3 py-2 outline-double text-primary ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-            Log in
+        <a href="{{ route('login') }}" class="rounded-md mx-3 px-3 py-2 text-primary text-xl font-bold ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+            Login
         </a>
 
         @if (Route::has('register'))
