@@ -1,6 +1,6 @@
 <x-main-layout title="About">
     {{-- Heading Start --}}
-    <section class="w-full h-96 bg-cover" style="background-image: url({{ asset('images/about/heading_about_us.jpg') }})">
+    <section class="w-full h-[500px] bg-cover" style="background-image: url({{ asset('images/about/heading_about_us.jpg') }})">
         <div class="max-w-6xl h-full container mx-auto text-white flex justify-center items-center flex-col">
             <p class="text-5xl font-bold">HALO</p>
             <p class="text-2xl font-medium">-- KAMI DARI PALAPA DENTIST --</p>
@@ -9,13 +9,13 @@
     {{-- Heading End --}}
 
     {{-- Jumbotron Start --}}
-    <section class="-mt-28 mb-28 max-w-6xl container mx-auto">
+    <section class="-mt-40 mb-8 max-w-5xl container mx-auto">
         <img src="{{ asset('images/about/about_jumbotron.webp') }}" alt="jumbotron" class="w-ful h-full rounded-3xl">
     </section>
     {{-- Jumbotron End --}}
 
     {{-- Service Start --}}
-    <section class="min-h-screen max-w-6xl container mx-auto">
+    <section class="max-w-6xl container mx-auto">
         <div class="max-w-5xl container mx-auto text-center mb-12">
             <h1 class="text-xl lg:text-5xl font-bold mb-4">Layanan Perawatan Gigi Kami meliputi</h1>
             <p class="text-md font-extralight">
@@ -23,30 +23,30 @@
                 Kami di sini siap untuk membantu menangani kebutuhan gigi Anda.
             </p>
         </div>
-        <div class="max-w-6xl container mx-auto flex md:justify-between md:flex-1 md:flex-row flex-col items-center">
-            <div class="w-60 h-96 flex justify-start items-center flex-col mb-8">
-                <div class="h-24 w-24 mb-4">
+        <div class="max-w-6xl container mx-auto flex flex-wrap flex-col items-center md:justify-between md:flex-row md:items-start">
+            <div class="w-60 flex justify-start items-center flex-col mb-8">
+                <div class="w-24 mb-4">
                     <img src="{{ asset('images/services/service_1.png') }}" alt="service" class="h-full w-full">
                 </div>
                 <h3 class="text-2xl font-semibold mb-2">Tim Dokter Terampil</h3>
                 <p>Para dokter dan spesialis di Palapa Dentists merupakan lulusan dari universitas terbaik di Indonesia dan terus meningkatkan ilmu serta skill dalam spesialisasi yang digelutinya, sehingga mampu memberikan pelayanan yang komprehensif, terbaik dan berkualitas</p>
             </div>
-            <div class="w-60 h-96 flex justify-start items-center flex-col mb-8">
-                <div class="h-24 w-24 mb-4">
+            <div class="w-60 flex justify-start items-center flex-col mb-8">
+                <div class="w-24 mb-4">
                     <img src="{{ asset('images/services/service_2.png') }}" alt="service" class="h-full w-full">
                 </div>
                 <h3 class="text-2xl font-semibold mb-2">Peralatan Canggih dan Modern</h3>
                 <p>Didukung oleh peralatan modern dan lengkap untuk memberikan perawatan yang lebih nyaman dan hasil yang lebih baik</p>
             </div>
-            <div class="w-60 h-96 flex justify-start items-center flex-col mb-8">
-                <div class="h-24 w-24 mb-4">
+            <div class="w-60 flex justify-start items-center flex-col mb-8">
+                <div class="w-24 mb-4">
                     <img src="{{ asset('images/services/service_3.png') }}" alt="service" class="h-full w-full">
                 </div>
                 <h3 class="text-2xl font-semibold mb-2">Lingkungan Nyaman dan Bersih</h3>
                 <p>Suasana yang nyaman dan penuh keramahan, akan membuat Anda lebih rileks dalam menerima perawatan</p>
             </div>
-            <div class="w-60 h-96 flex justify-start items-center flex-col mb-8">
-                <div class="h-24 w-24 mb-4">
+            <div class="w-60 flex justify-start items-center flex-col mb-8">
+                <div class="w-24 mb-4">
                     <img src="{{ asset('images/services/service_4.png') }}" alt="service" class="h-full w-full">
                 </div>
                 <h3 class="text-2xl font-semibold mb-2">Adanya Alat Penunjang</h3>
@@ -58,7 +58,7 @@
     {{-- Service End --}}
 
     {{-- Penanggung Jawab Start --}}
-    <section class="hero min-h-screen max-w-6xl container mx-auto pt-4">
+    <section class="max-w-6xl container mx-auto pt-4">
         <div class="hero-content flex-col lg:flex-row">
             <img src="{{ asset('images/drg-Anggraeni-10-1024x1024.webp') }}" class="max-w-sm rounded-full shadow-2xl m-3" />
             <div class="m-8">
@@ -84,7 +84,7 @@
     {{-- Penanggung Jawab End --}}
 
     {{-- Sejarah Start --}}
-    <section class="w-full min-h-screen py-12" style="background-image: url({{ asset('images/about/background.jpg') }})">
+    <section class="w-full py-12" style="background-image: url({{ asset('images/about/background.jpg') }})">
         <div class="container mx-auto max-w-6xl">
             <div class="grid grid-cols-1 justify-items-center my-4">
                 <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">

@@ -1,10 +1,9 @@
 <x-main-layout>
 
     {{-- Jumbotron Start --}}
-    <section class="hero min-h-screen bg-fixed" style="background-image: url({{ asset('images/jumbotron.png') }});">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-neutral-content text-center">
-            <div class="max-w-3xl">
+    <section class="min-h-screen bg-fixed flex justify-center items-center" style="background-image: url({{ asset('images/jumbotron.png') }});">
+        <div class="hero-content text-neutral-content">
+            <div class="max-w-3xl text-center">
                 <h1 class="mb-5 text-4xl font-bold">Selamat Datang di</h1>
                 <H2 class="mb-5 text-7xl font-bold text-primary">PALAPA DENTIST</H2>
                 <p class="mb-5">
@@ -19,7 +18,7 @@
     {{-- Jumbotron End --}}
 
     {{-- Tabs Pendaftaran Start --}}
-    <div class="mt-8 lg:-mt-32 container mx-auto max-w-6xl">
+    <div class="mt-8 lg:-mt-32 container mx-auto max-w-5xl">
         <div role="tablist" class="tabs tabs-lifted">
             {{-- Tab 1 Start --}}
             <input type="radio" name="my_tabs_2" role="tab" class="tab text-primary font-bold bg-slate-400" aria-label="Buat_Perjanjian" checked="checked" />
@@ -97,11 +96,13 @@
     {{-- Tabs Pendaftaran End --}}
 
     {{-- Reason Start --}}
-    <section class="min-h-screen lg:max-w-6xl py-4 container mx-auto max-w-6xl">
+    <section class="py-4 container mx-auto max-w-7xl">
         <div class="hero rounded-t-3xl">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <img src="{{ asset('images/home/FOTO1-1.jpg') }}" class="max-w-sm md:max-w-lg rounded-lg shadow-2xl" />
-                <div class="max-w-sm md:max-w-lg">
+            <div class="hero-content flex flex-col lg:flex-row-reverse">
+                <div class="flex-1">
+                    <img src="{{ asset('images/home/FOTO1-1.jpg') }}" class="rounded-lg shadow-2xl" />
+                </div>
+                <div class="flex-[1.5]">
                     <h1 class="text-5xl font-bold">Kenapa Memilih Palapa Dentists?</h1>
                     <p class="py-6">
                         Palapa Dentists merupakan klinik gigi spesialis di Jakarta Selatan dengan konsep pelayanan klinik gigi profesional dan terpadu bernuansa homey sehingga berbeda dengan nuansa rumah sakit pada umumnya.
@@ -120,7 +121,7 @@
     {{-- Reason End --}}
 
     {{-- Penanggung Jawab Start --}}
-    <section class="hero bg-white min-h-screen pt-4 container mx-auto max-w-6xl">
+    <section class="hero bg-white pt-4  container mx-auto max-w-7xl">
         <div class="hero-content flex-col lg:flex-row">
             <img src="{{ asset('images/drg-Anggraeni-10-1024x1024.webp') }}" class="max-w-sm rounded-full shadow-2xl m-3" />
             <div>
@@ -138,11 +139,11 @@
 
     {{-- Service Start --}}
     <!-- ====== Services Section Start -->
-    <section class="py-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark container mx-auto max-w-6xl">
-        <div class="container mx-auto">
+    <section class="py-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark  container mx-auto max-w-7xl">
+        <div class=" container mx-auto">
             <div class="-mx-4 flex flex-wrap">
                 <div class="w-full px-4">
-                    <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+                    <div class="container mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
                         <span class="text-primary mb-2 block text-lg font-semibold">
                             Layanan Kami
                         </span>
@@ -259,12 +260,12 @@
     {{-- Service End --}}
 
     <!-- ====== Testimonials Section Start -->
-    <section class="my-10 md:my-24 container mx-auto max-w-6xl min-h-screen flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
+    <section class="my-10 md:my-24  container mx-auto max-w-7xl min-h-screen flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
         <div class="relative w-full py-2 md:py-24 bg-indigo-700 md:w-1/2 flex flex-col item-center justify-center">
 
             <div class="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
 
-            <div class="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
+            <div class="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:container mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
                 <span class="md:block">Yang</span>
                 <span class="md-block">Pelanggan</span>
                 <span class="block">Kami Katakan...!</span>
@@ -335,11 +336,11 @@
     <!-- ====== Testimonials Section End -->
 
     <!-- ====== Blog Section Start -->
-    <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-white dark:bg-dark container mx-auto max-w-6xl min-h-screen">
-        <div class="container mx-auto">
+    <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-white dark:bg-dark  container mx-auto max-w-7xl">
+        <div class=" container mx-auto">
             <div class="flex flex-wrap justify-center -mx-4">
                 <div class="w-full px-4">
-                    <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+                    <div class="container mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
                         <span class="block mb-2 text-lg font-semibold text-primary">
                             Info Penting
                         </span>
@@ -420,7 +421,7 @@
 
     {{-- Subscriptin Start --}}
     <section class="bg-indigo-500 text-black py-16 sm:py-24 lg:py-32 mb-12">
-        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
+        <div class="container mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
             <div class="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
                 <h2 class="inline sm:block lg:inline xl:block">Want product news and updates?</h2>
                 <p class="inline sm:block lg:inline xl:block">Sign up for our newsletter.</p>
@@ -438,7 +439,7 @@
     {{-- Subscriptin End --}}
 
     {{-- Coment Start --}}
-    <section class="container mx-auto  max-w-4xl lg:grid lg:grid-cols-3 lg:gap-2 content-center mb-12">
+    <section class=" container mx-auto  max-w-4xl lg:grid lg:grid-cols-3 lg:gap-2 content-center mb-12">
         <label class="input input-bordered flex items-center gap-2 mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
                 <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />

@@ -1,8 +1,8 @@
-<header class="bg-white inset-x-0 top-0 z-50" x-data="{ isOpen: false }">
+<header class="bg-white inset-x-0 top-0 z-50 sticky" x-data="{ isOpen: false }">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
+                <span class="sr-only">Klinik Palapa</span>
                 <img class="h-8 w-auto" src="{{ asset('images/logo.png') }}" alt="Logo">
             </a>
         </div>
